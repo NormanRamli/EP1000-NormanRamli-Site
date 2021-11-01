@@ -131,48 +131,62 @@ font-family: monospace
     
     
 /*-------------------------------------START HERE FOR CSS------------------------------------------------------------------*/
-    .main{margin-top: 30px;}
-    
-    
-    .tanjiro{width: 750px;
-        display: block;
-  margin-left: auto;
-  margin-right: auto;
-    
-}
  
     body{background: #010D26;}   
     
-    h1{color: white;
-        font-size: 38px;
+    .week1-2header{
+        color: white;
+        font-size: 20px;
         font-family:monospace;
-    text-align: center;
     display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    background-color: #425C80;
-    padding: 15px;
-    width: 722px;
+    margin-top: 20px;
+    text-align: center;
+        padding:10px;
+        background-color: #425C80;
     }
     
+
+    .contentbox{display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+    }
     
+    .w3{width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    }
     
+    .brackets{width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    }
     
+    .aboutpic{width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    }
+
+    .homevid{width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;}
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    .abouttext{
+    word-wrap: break-word;
+    font-family:monospace;
+    color:white;
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: left;
+    background-color: #425C80;     
+   }
+
     
     
 /*-------------------------------------END HERE FOR CSS------------------------------------------------------------------*/
@@ -181,8 +195,8 @@ font-family: monospace
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="aboutme.html">About</a>
+  <a href=index.html class="active">Home</a>
+  <a href=aboutme.html>About</a>
   <div class="dropdown">
     <button class="dropbtn">Blog 
       <i class="fa fa-caret-down"></i>
@@ -228,34 +242,27 @@ function myFunction() {
     
     
      <!------------------------------------------------START HERE FOR HTML------------------------------------------->   
-    <div class="main"> 
-    
-<img class="tanjiro" src="tanjiro.gif">
+  
 
-<h1>Welcome to my EP1000 Website!</h1>    
-     
-          
-     
-     
-</div>
+
+<div class="contentbox">
     
+<h2 class="week1-2header">Week 1-2: Web Development</h2>    
+
+<img class="w3" src="w3html.jpg">
     
+<img class="brackets" src="week1brackets.jpg">
     
+<img class="aboutpic" src="aboutmepic.jfif">
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!------------------------------------------------END HERE FOR HTML------------------------------------------->   
+<video class="homevid" autoplay muted loop ><source src="homevid.mp4" type="video/mp4"></video>
+
+<p class="abouttext">
+    This week I learned how to make my personal website using HTML and CSS. I started this week by learning them on W3 schools. Even though I have no programming experience, I found the step by step guides and the "Try it yourself" feature very helpful and made it easy to learn. I then applied what I learnt and editted my site on Brackets. For my page I decided to use a theme based on a gif on my hompeage which is from a popular anime called "Demon Slayer". I chose this as it was one of my favourite shows and I really like the main character. I then uploaded my site on github and ended my week.
+</p>
+
+</div> 
+       
+<!------------------------------------------------END HERE FOR HTML------------------------------------------->  
 </body>
 </html>

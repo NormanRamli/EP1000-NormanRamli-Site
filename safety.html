@@ -131,48 +131,61 @@ font-family: monospace
     
     
 /*-------------------------------------START HERE FOR CSS------------------------------------------------------------------*/
-    .main{margin-top: 30px;}
-    
-    
-    .tanjiro{width: 750px;
-        display: block;
-  margin-left: auto;
-  margin-right: auto;
-    
-}
  
     body{background: #010D26;}   
     
-    h1{color: white;
-        font-size: 38px;
+     .contentbox{display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+    }
+
+    
+    .safetyheader{
+        color: white;
+        font-size: 20px;
         font-family:monospace;
-    text-align: center;
     display: block;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    background-color: #425C80;
-    padding: 15px;
-    width: 722px;
+    margin-top: 20px;
+    text-align: center;
+        padding:10px;
+        background-color: #425C80;
     }
     
+  .attire{width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    }
     
+    .ppe{width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    }
     
+    .safetyplacards{width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    }
+
+    .emergency{width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;}
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    .abouttext{
+    word-wrap: break-word;
+    font-family:monospace;
+    color:white;
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: left;
+    background-color: #425C80;     
+   }
     
     
 /*-------------------------------------END HERE FOR CSS------------------------------------------------------------------*/
@@ -181,8 +194,8 @@ font-family: monospace
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="aboutme.html">About</a>
+  <a href=index.html class="active">Home</a>
+  <a href=aboutme.html>About</a>
   <div class="dropdown">
     <button class="dropbtn">Blog 
       <i class="fa fa-caret-down"></i>
@@ -228,34 +241,27 @@ function myFunction() {
     
     
      <!------------------------------------------------START HERE FOR HTML------------------------------------------->   
-    <div class="main"> 
+  
+<div class="contentbox">
     
-<img class="tanjiro" src="tanjiro.gif">
+<h2 class="safetyheader">Week 1: Fablab safery</h2>
 
-<h1>Welcome to my EP1000 Website!</h1>    
-     
-          
-     
-     
+<img class="attire" src="attire.jpg">
+<img class="ppe" src="ppe.jpg">
+<img class="safetyplacards" src="safetyplacards.jpg">
+<img class="emergency" src="emergency.jpg">
+
+<p class="abouttext">
+This week I learnt about Fablab safety rules. The first thing I learned was that before we enter the Fablab, we must ensure that we are in proper attire. We must ensure that we are wearing long pants, short sleeved tops, and covered shoes. After that, I learned about the various hazards in the lab. I learnt that specific ppe must be worn for specific equipment. For example, heat resistant gloves, for the laser cutter. Safety placards are also displayed at the equipment itself, indicating the level of risk as well as the specific hazard at the equipment. Lastly, I learnt about what to do in an emergency. If the alarm sounds, we should immediately stop work and wait for instructions from the staff in charge. If the staff is not around we should call, SP emergency hotline, abulance and SCDF, or police. One key takeaway from this lesson is that we should not horseplay in the lab and be careful of our surroundings in the lab
+</p>
+    
 </div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!------------------------------------------------END HERE FOR HTML------------------------------------------->   
+
+
+
+
+       
+<!------------------------------------------------END HERE FOR HTML------------------------------------------->  
 </body>
 </html>
