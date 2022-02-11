@@ -154,25 +154,10 @@ font-family: monospace
   .attire{width: 700px;
     display: block;
     margin: 0 auto;
-    padding-top: 10px;
-    }
-    
-    .ppe{width: 700px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 10px;
-    }
-    
-    .safetyplacards{width: 700px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     }
 
-    .emergency{width: 700px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 10px;}
     
     .abouttext{
     word-wrap: break-word;
@@ -245,16 +230,96 @@ function myFunction() {
   
 <div class="contentbox">
     
-<h2 class="safetyheader">Week 6: 3D Printing (COMING SOON)</h2>
+<h2 class="safetyheader">Week 6: 3D Printing</h2>
 
-<img class="attire" src="">
-<img class="ppe" src="ppe.jpg">
-<img class="safetyplacards" src="">
-<img class="emergency" src="">
-
+<img class="attire" src="vectorchess.jpg">
+<img class="attire" src="chessimported.jpg">
 <p class="abouttext">
-Stuff about 3D printing
+I started the modelling of the chess piece by exporting a vector outline trace of a knight chess silhouette into Fusion 360. I sketeched a horiziontal line to split the horse and the base. The horse would then be extruded. As for the base, I sketched a line down the middle so that I could revolve the base
 </p>
+    
+    
+<img class="attire" src="chess%20side.jpg">
+ <img class="attire" src="chessangle.jpg"> 
+<p class="abouttext">
+I also fillet all the sharp edges to give it a more natural look to the horse. Then, I extruded an eye for the horse.
+</p>
+ 
+    
+    
+ <img class="attire" src="stlcura.png">
+ <img class="attire" src="chesscura.jpg"> 
+ <p class="abouttext">
+I then exported the file to stl where it can be sliced to cura
+</p>  
+ 
+ <br>   
+ <p class="abouttext">
+3D print settings
+</p> 
+    
+    
+  <img class="attire" src="RESIZE.jpg">   
+  <p class="abouttext">
+When first opening the stl file, the print can be rotated as well as rescaled to be larger or smaller.
+</p> <br>     
+    
+    
+ <img class="attire" src="layer%20height.jpg">
+  <img class="attire" src="layer-height_orig.jpg.crdownload">   
+  <p class="abouttext">
+The first and most important print setting is layer height which determines the amount of detail in the print. The higher the value is, the poorer the quality but it takes a significantly lower time.I decided on 0.2 layer height.
+</p> <br>     
+    
+    
+    
+ 
+ <img class="attire" src="infill.jpg"> 
+ <img class="attire" src="infill-types.jpg">  
+  <p class="abouttext">
+The second print setting is infill which determines how hollow the print would be. It also determines the strength. Since the chess piece is relatively small, and does not require alot of strength, I chose 10% infill.
+</p> <br>     
+
+    
+  <img class="attire" src="speed.jpg">   
+ <img class="attire" src="speed_quality.png">    
+   <p class="abouttext">
+The third print setting is speed, which determines how fast the print would take. A faster print speed would make the print time shorter, but it gives less time for each layer to cool risking the print to mess up. A good speed would be around 50mm/s to 80mm/s. I decided to go with 70mm/s
+</p> <br>   
+
+    
+    
+ <img class="attire" src="support.jpg">
+    <p class="abouttext">
+The fourth print setting is support, which is used for overhangs. There are two types of supports, normal which is uniform and attaches to parts of the print, and tree which only supports the overhangs without touching the other parts of the model. Since the chin of the horse an overhang, I used a normal support
+</p> <br>      
+
+   
+    
+ <img class="attire" src="brim.jpg">
+      <p class="abouttext">
+The last print setting is build plate adhesion, which is used to stick the model firmly to the print surface. It really helps if the build surface is not perfrectly leveled.
+</p> <br>    
+   
+    
+ <img class="attire" src="preview.jpg">
+        <p class="abouttext">
+After applying all the settings, this is how the print looks like in the preview, with a total time of 33 minutes
+</p> <br>      
+ 
+ <img class="attire" src="exportprocess.png">
+        <p class="abouttext">
+Finally I saved the print to gcode, so that the printer can read the file, onto a micro sd card and sent it to the printer
+</p> <br>      
+  
+    
+<video class="attire" autoplay muted loop ><source src="printing.MOV" type="video/mp4"></video>    
+ <img class="attire" src="finalprintcropped.jfif">    
+
+    
+<p class="abouttext">
+This is how the print came out, overall fun experience :)
+</p>    
     
 </div>
     
