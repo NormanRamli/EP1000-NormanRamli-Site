@@ -133,14 +133,14 @@ font-family: monospace
 /*-------------------------------------START HERE FOR CSS------------------------------------------------------------------*/
  
     body{background: #010D26;}   
-     
-    .contentbox{display: block;
+    
+     .contentbox{display: block;
     margin-left: 100px;
     margin-right: 100px;
     }
 
     
-    .projectheader{
+    .safetyheader{
         color: white;
         font-size: 20px;
         font-family:monospace;
@@ -151,22 +151,27 @@ font-family: monospace
         background-color: #425C80;
     }
     
+  .attire{width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    .abouttext{
+    word-wrap: break-word;
+    font-family:monospace;
+    color:white;
+    font-size: 18px;
+    padding: 20px;
+    display: block;p===
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: left;
+    background-color: #425C80;     
+   }
     
     
 /*-------------------------------------END HERE FOR CSS------------------------------------------------------------------*/
@@ -175,8 +180,8 @@ font-family: monospace
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="aboutme.html">About</a>
+  <a href=index.html class="active">Home</a>
+  <a href=aboutme.html>About</a>
   <div class="dropdown">
     <button class="dropbtn">Blog 
       <i class="fa fa-caret-down"></i>
@@ -184,10 +189,11 @@ font-family: monospace
     <div class="dropdown-content">
       <a href="safety.html">Fablab Safety</a>
       <a href="webdev.html">Web Development</a>
-      <a href="computeraideddesign.html">Computer Aided Design</a>
+        <a href="computeraideddesign.html">Computer Aided Design</a>
       <a href="lasercutting.html">Laser Cutting</a>
         <a href="3dprinting.html">3D Printing</a> 
       <a href="embeddedprogramming.html">Embedded Programming</a>
+    </div>
   </div> 
   <a href="finalproject.html">Project</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -222,29 +228,189 @@ function myFunction() {
     
     
      <!------------------------------------------------START HERE FOR HTML------------------------------------------->   
-   <div class="contentbox">
-    <h2 class="projectheader">Coming soon!</h2>
+  
+<div class="contentbox">
+    
+<h2 class="safetyheader">Final Project </h2>
 
-    </div>
+<br><br>    
+<p class="safetyheader"> Part 1: 3D Modelling</p>    
+
+<img class="attire" src="inspirations.jpg">
+<p class="abouttext"> When deciding on what to do for the final project, I knew I wanted to make some sort of lamp to decorate my room, but I wanted something that looks unique. I then came across these pictures and wanted to have my own go at it.</p>
     
+<video class="attire" autoplay muted loop ><source src="fusion%20modelling.mp4" type="video/mp4"></video>
+<p class="abouttext"> This is the modelling process I went through to design the lamp</p>
+    
+    
+<video class="attire" autoplay muted loop ><source src="createcircle.mp4" type="video/mp4"></video>
+<p class="abouttext"> One thing I learned when building this lamp was the create circle pattern feature which allowed me to duplicate the fins easily without having me to manually place each new fin. This feature saved me alot of time.</p>
+
+<img class="attire" src="allmeasurements.jpg">
+<img class="attire" src="base150.jpg">
+<p class="abouttext"> 
+    These are some measurements of the lamp
+    </p>    
+    
+<img class="attire" src="label%20with%20model.jpg">
+<p class="abouttext"> 
+    
+    These are the key parts of the lamp<br><br>
+    1. x10 FINS, used as a way to diffuse the light<br><br>
+    2. FIN HOLDERS, located at the top mid and bottom of the lamp to ensure that the fins are secured<br><br>
+    3. ROD, a way to hold up the lamp as well as to coil the neopixel leds around the lamp<br><br>
+    4. BASE, store the arduino uno as well as the breadboard<br><br>
+    5.KNOB, attached to a potentiometer to control the hue of the lamp
+    
+    </p>
+
+
+<br><br>   
+<p class="safetyheader"> Part 2: Laser cutting and 3D Printing</p> 
+
+
+<video class="attire" autoplay muted loop ><source src="base%20printing.MOV" type="video/mp4"></video>
+<p class="abouttext">3D printing of the base</p>    
+    
+<video class="attire" autoplay muted loop ><source src="rod%20and%20knob.MOV" type="video/mp4"></video>
+ <video class="attire" autoplay muted loop ><source src="rod1.MOV" type="video/mp4"></video> 
+<p class="abouttext">3D printing of the rod and the knob. The rod is printed in two parts as it does not fit inside the printer's build volume. The two knobs will be glued together later on</p>    
+ 
+    
+ <video class="attire" autoplay muted loop ><source src="circlecutspeed.mp4" type="video/mp4"></video>
+    <p class="abouttext">Laser cutting of the top mid and bottom fin holders</p>    
+ 
+  <video class="attire" autoplay muted loop ><source src="fincutspeed.mp4" type="video/mp4"></video>
+    <p class="abouttext">Lase cutting of the fins</p>    
+ 
+  <img class="attire" src="allpartsrotated.jpg">
+    <p class="abouttext">These are all the laser cut put parts</p>    
+ 
+    <img class="attire" src="combinedrod.jpg">
+    <img class="attire" src="whiterodrotated.jpg">
+    <p class="abouttext">As previously mentioned, I glued together the 2 parts of the rod. Since the rods were printed in different colours, I decided to paint it white to give it a more consistent look. Whtie is also a good colour that would better diffuse and absorb the light.</p>    
+ 
+
+<br><br>   
+<p class="safetyheader"> Part 3: Electronics and Embedded programming</p>     
+    
+    
+<img class="attire" src="COMPONENTSNEEDED.jpg">    
+<p class="abouttext"> 
+    
+    These are the electrrical components I will be using <br><br>
+    1. Arduino uno - Used as a microcontroller to communicate between the potentiometers and the leds<br><br>
+    2. Mini Breadboard - Used to build circuits and connect components<br><br>
+    3. 2 Potentiometers - Used as the input device. One will be used to control the hue of the led and one will be used to control the brightness led<br><br>
+    4. 24 LED neopixel strip - Used as the output deivce
+    
+    </p>    
+    
+
+<iframe src=https://create.arduino.cc/editor/normand0_/27d19569-5d93-406c-9279-beba888c8c87/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+<p class="abouttext"> 
+This is the code I used to control the lamp with annotations to explain the code. In summary, it lights up the entire LED strip and allows the brightness and hue to be changed by 2 potentiometers. </p>
+    
+<img class="attire" src="brightnessdiagram.jpg">
+<p class="abouttext"> 
+This diagram further explains the mapping of the potentiometer to the brightness. In the code above, the arduino can read 0-1024 analog values from the potentiometer. These values are mapped to the 0-255 values that is used for brightness. Therefore, as the potentiometer is turned, the brightness is increased. </p>
+    
+    
+<img class="attire" src="redblueexplaination.jpg">  
+<p class="abouttext"> 
+This diagram further explains the mapping of the potentiometer to the hue of the lamp. It is similar to the mapping for the brightness. Instead of brightness, I am mapping it to the red and blue values respectively. For the blue values it is mapped to 0-255 so that when the potentiometer is turned, it will go from zero blue to the highest blue level. As for the red values, it is instead mapped inversely from 255 to 0 so that when the potentiometer turns, it will go from the highest red level to zero red. By mapping these colours inversely, a greater range of colours can be achieved. So when the potentiometer is turned, it will go from pure blue to purple-like colours and all the way to pure red. </p>    
+    
+    
+<img class="attire" src="circuitdiagram.jpg">  
+<p class="abouttext"> 
+This is the circuit diagram. The potentiometer for colour is directly attached to the breadboard, while the other potentiometer, used for brightness is connected externally through wires so that it can be routed to the top of the base. </p>    
+    
+    
+    
+    
+<video class="attire" autoplay muted loop ><source src="electronics.MOV" type="video/mp4"></video>
+<p class="abouttext"> 
+   This is a demonstration of what the code does.
+    </p>
+    
+    
+<br><br>   
+<p class="safetyheader"> Part 4: Final Assembly and Demonstration</p> 
+
+<img class="attire" src="usbhole.jpeg">
+<img class="attire" src="pothole.jpeg">
+<p class="abouttext"> 
+Before doing the final assembly, I actually had to make some modifications to the base as well as the bottom fin holder. In the first picture, I forgot to create another hole for the usb, so I used a drill to make one. In the second picture, I drilled a hole on the bottom fin holder so that I could fit the second potentiometer which is used to control the brightness. I had to do this as I did not intend to have this feature in the first place, but I was thankful that the modification went smoothly and did not damage my parts.
+    </p>  
+    
+    
+<video class="attire" autoplay muted loop ><source src="electronicsinbase.MOV" type="video/mp4"></video>
+<p class="abouttext"> 
+   This is how the electronics fit in the base.
+    </p>    
+    
+    
+<img class="attire" src="light%20without%20base.jpeg"> 
+<p class="abouttext"> 
+   I first assembled the base as well as the rod and LEDs. The fins will then sit on top of the rod
+    </p>
+
+
+<video class="attire" loop   muted autoplay  ><source src="TIMELASPE%2030%20SEC.mp4" type="video/mp4"></video>    
+<p class="abouttext"> 
+This is the final timelaspe of the lamp being assembled
+    </p>   
+    
+
+<video class="attire" loop   muted autoplay  ><source src="TESTING.MOV" type="video/mp4"></video>    
+<p class="abouttext"> 
+This is the final product, I am first demonstrating the ability of the lamp to change colours. As previously mentioned, the lamp can only display red to blue and any colour in between. I am also demonstrating that the lamp can change its brightness
+    </p>       
+    
+    
+<video class="attire" loop autoplay  ><source src="FINAL%20VIDEO.mp4" type="video/mp4"></video>    
+<p class="abouttext">
+This is my final 1 min video for the module submission. It has been a great experience taking this module as I had alot of fun. Enjoy!
+</p> 
+
+  
+    
+<br>  
+<p class="safetyheader"> Part 5: Reflection - Challenges and Possible Improvements</p> <br><br>
+    
+
+<p class="abouttext">
+These are the challenges I face during the project
+<br><br>
+1. Doing the porject last minute and the lab being full during the last 2 weeks, resulted in me having to wait a long time to use the machines. If I had done my work earlier and made the parts over the weeks I would not have had to face this issue.
+<br><br> 2. I did not think of my design thoroughly enough so I had to make my own modifications.
+<br><br>3. The top fin snapped a s it was really thin and I had to glue it back together. Next time I could be more gentle or print or cut out a duplicate part that is prone to breaking    
+</p>
+
+
+ <img class="attire" src="redglow.jpeg">    
+<img class="attire" src="exposedglow.jpeg"> 
+
+    
+    <p class="abouttext"> 
+These are the possible improvements I could have made to the project
+<br><br>
+1. The arduino has a red led which makes the base glow red. If I were to improve it, I would line the inside of the base with black paper or something opaque.
+<br><br> 2. The leds are directly exposed, which gives of a very harsh glow. If I were to improve it, I would use some kind of material like baking paper or tracing paper and wrap it around the rod to diffuse the light
+  
+
+    </p> 
+
 
     
     
+</div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!------------------------------------------------END HERE FOR HTML------------------------------------------->   
+
+
+
+
+       
+<!------------------------------------------------END HERE FOR HTML------------------------------------------->  
 </body>
 </html>

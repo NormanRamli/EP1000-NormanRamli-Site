@@ -1,0 +1,36 @@
+inpsirtation
+\
+modelling
+circular pattern
+\
+printing
+\
+cutting
+\
+input and output devices
+\
+explain mapping of red and blue
+
+Hello everyone, my name is Norman and today Ill be showing you my DFAB project called the skeleton lamp
+
+When thinking of the final project,I knew I wanted to make some sort of lamp but I wanted it to be more unique. I then came across these pictures which I thought were super cool and decided to have my own go at it
+
+So heres the modelling process, my lamp consists of 5 main parts, The base, The fins, the 3 circular sections that hold the fins together, a rod to coil the leds as  well as a knob that is attached to a potentiometer
+
+One thing I found really useful designing the lamp was the circular pattern under the create menu. This allowed me to duplicate the fins easily without having to manually position them.
+
+/
+Now heres a montage of the 3d printing and the laser cutting
+/
+Moving on to the electronics,
+For the output device, I used a 24 led neopixel strip.
+For the input devices I used 2 potentiometers, one to change the hue and one to change the brightness
+
+To change the brightness,  I mapped the 1024 values that the arduino can read from the potentiometer to the 255 levels of brightness that can be set to the neopixel
+
+As for the hue I did something similar. Instead of the 255 levels be brightness, I set it to red and blue individually. I stored the range of 0-255 into one variable named__ for red
+and 255-0 in another variable for blue
+
+This is so that when the potentiometer is turned, it will go from one end of the red spectrum to the other end of the blue spectrum 
+
+With that heres the final product	
