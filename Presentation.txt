@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Link to 1 min video
+=======
+Link to 1 min video
+>>>>>>> e77fc25717c14740349ac4ad606af4cc61491ba3
 https://www.youtube.com/watch?v=cCp6d97ho-Q
